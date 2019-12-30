@@ -56,11 +56,11 @@ SCRAPYD_SERVERS = [
     ('', '', '127.0.0.1', '6800', 'local')
 ]
 import re
-for k, v in os.environ.items():
-    k = k.strip()
-    v = v.strip()
-    if re.match(r'SCRAPYD_SERVER_\d+', k) and not re.search(r'^del(ete)?$', v, flags=re.I):
-        SCRAPYD_SERVERS.append(v)
+# for k, v in os.environ.items():
+#     k = k.strip()
+#     v = v.strip()
+#     if re.match(r'SCRAPYD_SERVER_\d+', k) and not re.search(r'^del(ete)?$', v, flags=re.I):
+#         SCRAPYD_SERVERS.append(v)
 
 # It's recommended to update the three options below
 # if both ScrapydWeb and one of your Scrapyd servers run on the same machine.
