@@ -8,4 +8,5 @@ RUN apt-get update && \
   apt-get remove -y git
   
 EXPOSE 80
+RUN chmod 755 ./start.sh
 CMD ./start.sh
