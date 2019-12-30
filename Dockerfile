@@ -8,4 +8,4 @@ RUN apt-get update && \
   apt-get remove -y git
   
 EXPOSE 80
-CMD start.sh
+CMD ./start.sh
