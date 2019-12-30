@@ -1,11 +1,13 @@
 pip>=19.1
-git+git://github.com/my8100/scrapydweb.git
-
-# pymysql>=0.9.3
-# psycopg2>=2.7.7
 #Twisted>=18.9.0
 scrapy
 #scrapyd>=1.2.1
 git+git://github.com/timng/scrapyd.git@master
 scrapy-redis
 logparser>=0.8.2
+
+git+git://github.com/my8100/scrapydweb.git
+
+# pymysql>=0.9.3
+# psycopg2>=2.7.7
+
