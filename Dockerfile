@@ -1,10 +1,10 @@
-FROM python:3.6-slim
+FROM python:2.7-slim
 ADD . /app
 WORKDIR /app
 
 RUN apt-get update && \ 
   apt-get install -y git && \
-  pip3 install -r requirements.txt && \
+  pip install -r requirements.txt && \
   apt-get remove -y git
   
 EXPOSE 80
