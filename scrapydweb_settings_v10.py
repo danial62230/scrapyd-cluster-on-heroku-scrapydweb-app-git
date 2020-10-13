@@ -53,7 +53,7 @@ PASSWORD = os.environ.get('PASSWORD', 'scrapydweb')
 #   - it's recommended to pass in a tuple of 5 elements.
 #   - e.g. ('', '', '127.0.0.1', '6800', '') or ('username', 'password', 'localhost', '6801', 'group')
 SCRAPYD_SERVERS = [
-    (USERNAME, PASSWORD, '159.89.97.35', '6800', 'local')
+    (USERNAME, PASSWORD, '159.89.97.35', '81', 'local')
 ]
 import re
 # for k, v in os.environ.items():
